@@ -1,0 +1,46 @@
+body {
+    margin: 0 auto;
+}
+
+.container {
+    background-color: red;
+    /*width: 100%;*/
+    height: 100vh;
+}
+
+.dash-container {
+    /*width: 100%;*/
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+        "menu menu"
+        "rec-list rec-games"
+        "footer footer";
+}
+
+.menu {
+    grid-area: menu;
+    background-color: orange;
+}
+
+.dash-list {
+    grid-area: rec-list;
+    background-color: purple;
+}
+
+.dash-games-list {
+    grid-area: rec-games;
+    background-color: green;
+}
+
+footer {
+    grid-area: footer;
+    background-color: blue;
+}
+
+.name {
+    /*this is just for grabbing the selector easily*/
+    /*this is to substitute "Dan's" in the titles*/
+}
